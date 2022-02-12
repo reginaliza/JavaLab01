@@ -8,5 +8,5 @@ public enum transactionTypes {
     billsPayment,
     buyLoad,
     addAccountCredits,
-    addGameCredits;
+    addGameCredits
 }
