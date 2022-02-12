@@ -20,21 +20,17 @@ public class moneyTransfer extends transaction {
         return recipient;
     }
 
-    public void setRecipient(String recipient) {
-        this.recipient = recipient;
-    }
-
     @Override
     public String toString(){
         String output = "MONEY TRANSFER" +
-                "Store ID: " + this.getStore_id() +
-                "Transaction ID: " + this.getTransaction_id() +
-                "Timestamp: " + this.getTimestamp() +
-                "Account ID" + this.getAccount_id()+
-                "Amount: " + this.getAmount() +
-                "Recipient: " + this.getRecipient();
+                "\nStore ID: " + this.getStore_id() +
+                "\nTransaction ID: " + this.getTransaction_id() +
+                "\nTimestamp: " + this.getTimestamp() +
+                "\nAccount ID: " + this.getAccount_id()+
+                "\nAmount: " + this.getAmount() +
+                "\nRecipient: " + this.getRecipient() +
+                "\n";
 
         return output;
-
     }
 }
