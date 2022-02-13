@@ -5,20 +5,18 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class PrintTypes extends transactionProcessing {
+public class PrintTypes {
 
-        // Create a private Transaction ArrayList
-        private static ArrayList<transaction> transactions = new ArrayList<>();
-        final private static Logger logger = Logger.getLogger(transactionProcessing.class.getName());
-
+        // Create a Show Transactions on Type parameters
+        
         public static void main(String[] args) {
             System.out.println("\n1. Money Transfer" + "\n2. Bills Payment" +
                     "\n3. Buy Load" + "\n4. Add Account Credits" + "\n5. Add Game Credits" + "\n\nPick a Transaction: ");
             Scanner type = new Scanner(System.in);
-            int pick = type.nextInt();
+            int choice = type.nextInt();
 
 
-            switch (pick) {
+            switch (choice) {
                 case 1: {
                     transactionProcessing mf = new transactionProcessing();
                     mf.addMoneyTransfer();
