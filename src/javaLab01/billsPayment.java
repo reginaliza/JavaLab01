@@ -38,4 +38,26 @@ public class billsPayment extends transaction {
 
         return output;
     }
+    
+    // Create a function to identify unique and duplicate bills
+    @Override
+    public boolean equals(Object object) {
+        billsPayment obj = (billsPayment) object;
+        if (obj == this) {
+            return true;
+        }
+        if (
+
+
+                Integer.compare(this.store_id, obj.store_id) == 0 &&
+                        Integer.compare(this.transaction_id, obj.transaction_id) == 0 &&
+                        Integer.compare(this.account_id, obj.account_id) == 0 &&
+                        this.company_name.equals(obj.company_name)
+        )
+        {
+            return true;
+        }
+
+        return false;
+    }
 }
