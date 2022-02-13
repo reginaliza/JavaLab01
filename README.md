@@ -1,3 +1,3 @@
 # JavaLab01
-Diloy, Regina
+Diloy, Regina;
 Corona, CJ
