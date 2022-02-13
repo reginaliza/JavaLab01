@@ -1,9 +1,6 @@
 package javaLab01;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class PrintTypes {
 
